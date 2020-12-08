@@ -1,4 +1,4 @@
-<table>
+<table id="comments-area">
   <% @book.book_comments.each do |book_comment| %>
     <% book_comment_user = book_comment.user %>
     <tr>
@@ -15,6 +15,3 @@
     </tr>
   <% end %>
 </table>
-<div id="js-table-comment">
-  <%= render 'books/comment_area' %>
-</div>
